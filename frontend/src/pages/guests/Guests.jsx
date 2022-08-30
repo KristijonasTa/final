@@ -70,7 +70,7 @@ const Guests = () => {
 			{modal ? (
 				<Modal onModalClose={closeModal} onFormSubmit={onCardChange} />
 			) : null}
-			<Button title='Add guest' onClick={openModal} />
+			{!modal ? <Button title='Add guest' onClick={openModal} /> : null}
 			<div>
 				{guest.map((data) => {
 					return (

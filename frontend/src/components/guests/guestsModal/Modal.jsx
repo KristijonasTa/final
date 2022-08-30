@@ -11,7 +11,7 @@ const Modal = ({ onModalClose, onFormSubmit }) => {
 	});
 
 	return (
-		<div>
+		<div className='container_wrapper'>
 			<form
 				className='container'
 				onSubmit={(event) => onFormSubmit(event, formValues)}
