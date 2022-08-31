@@ -105,11 +105,3 @@ router.patch('/:id', async (req, res) => {
 });
 
 module.exports = router;
-
-// `DELETE FROM events_has_guests
-// FROM table AS events_has_guests
-// INNER JOIN table AS guests ON events_has_guests.guests_Id = guests.Id
-// WHERE id=${Number(id)}`,
-//   `DELETE FROM guests
-// FROM table AS guests
-// WHERE id=${Number(id)}`,
